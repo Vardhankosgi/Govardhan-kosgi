@@ -318,13 +318,13 @@ section {
   width: 80%;
 }
 .progress-line.javaScript span {
-  width: 70%;
+  width: 90%;
 }
 .progress-line.java span {
-  width: 65%;
+  width: 75%;
 }
 .progress-line.react span {
-  width: 80%;
+  width: 90%;
 }
 .progress-line span::after {
   position: absolute;
@@ -345,13 +345,13 @@ section {
   content: "80%";
 }
 .progress-line.javaScript span::after {
-  content: "70%";
+  content: "90%";
 }
 .progress-line.java span::after {
-  content: "65%";
+  content: "75%";
 }
 .progress-line.react span::after {
-  content: "80%";
+  content: "90%";
 }
 .progress-line span::before {
   content: "";
