@@ -18,32 +18,3 @@ function sendEmail(){
   }).then((message) => alert(message));
 
 }
-
-const nodemailer = require('nodemailer');
-
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'govardhancse905@gmail.com',
-    pass: 'Govardhan@89'  // Sensitive info should be stored in environment variables in production
-  }
-});
-
-function sendUserEmail(userEmail, subject, message) {
-  const mailOptions = {
-    from: userEmail,  // User's email
-    to: 'govardhancse905@gmail.com',  // Your email to receive the message
-    subject: subject,
-    text: message
-  };
-
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-  });
-}
-
-module.exports = { sendUserEmail };
